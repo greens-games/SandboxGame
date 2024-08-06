@@ -4,8 +4,9 @@ const World = @import("engine").world;
 const Entity = @import("engine").entity.Entity;
 
 pub fn main() !void {
-    var game: Game = Game{};
+    var game: Game = .{};
     game.setUp().run();
+    defer game.cleanUp();
 }
 
 test "simple test" {

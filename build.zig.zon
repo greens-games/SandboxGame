@@ -18,7 +18,9 @@
         .@"zig-last-try" = .{
             //Using path for local dev
             //Should be url once released
-            .path = "../game-engine-zig/",
+	    //THis path is working on windows and for linux it won't
+            .path = "..\\zig-game-engine\\",
+            //.path = "../zig-game-engine/",
         },
     },
     .paths = .{
